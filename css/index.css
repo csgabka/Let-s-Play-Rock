@@ -1,0 +1,93 @@
+html, body {
+	font-family: 'Rock Salt', cursive;
+	margin: 0;
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: black;
+	height: 100%;
+	text-align: center;
+	color: purple;
+	text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+h1 {
+	padding: 10px;
+	display: block;
+}
+
+.container {
+	position: absolute;
+    text-align: center; 
+	height: 60%;
+	width: 60%;
+	left: 50%;
+	top: 50%;
+	margin-left: -25%;
+	margin-top: -12.5%;
+}
+
+.keyboard {
+	margin: 0 5px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 14vh;
+    font-size: 5vh;
+    line-height: 8vh;
+    border-radius: 4px;
+    z-index: 99;
+}
+
+.keyboard:hover, .keyboard-wide:hover, .keyboard-high:hover {
+	border: 2px purple solid;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.keyboard-wide {
+	margin: 0 5px;
+	width: 10vh;
+	height: 14vh;
+    font-size: 5vh;
+    line-height: 8vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	z-index: 99;
+}
+
+.keyboard-high {
+	margin: 0 5px;
+	width: 10vh;
+	height: 14vh;
+    font-size: 5vh;
+    line-height: 8vh;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+	z-index: 99;
+}
+
+.outline {
+    color: white;
+    text-shadow:
+	   -1px -1px 0 purple,  
+		1px -1px 0 purple,
+		-1px 1px 0 purple,
+		 1px 1px 0 purple;
+	z-index: -99;
+}
+
+@supports((text-stroke: 2px purple) or (-webkit-text-stroke: 2px purple)) {
+    .outline {
+        color: transparent;
+        -webkit-text-stroke: 2px purple;
+		text-stroke: 2px purple;
+        text-shadow: none;
+        z-index: -99;
+    }
+}

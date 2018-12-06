@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/guitar.css">
+  <link rel="stylesheet" type="text/css" href="css/drums.css">
+</head>
+<body onclick="playOnClick(event)" onkeydown="playInstrument(event)">
+	<h1>Let's play rock!</h1>
+	<div class="container">
+		<div class="drums">
+			<div class="drums-bottom-row">
+				<div id="snare" class="keyboard snare"><span class="outline">A</span></div>
+				<div id="first-tom" class="keyboard first-tom"><span class="outline">S</span></div>
+				<div id="second-tom" class="keyboard second-tom"><span class="outline">D</span></div>
+				<div id="bass-drum" class="keyboard bass-drum"><span class="outline">F</span></div>
+			</div>
+			<div class="drums-top-row">
+				<div id="crash" class="keyboard crash"><span class="outline">Q</span></div>
+				<div id="ride" class="keyboard ride"><span class="outline">W</span></div>
+				<div id="hi-hat" class="keyboard hi-hat"><span class="outline">E</span></div>
+				<div id="floor-tom" class="keyboard floor-tom"><span class="outline">R</span></div>
+			</div>
+		</div>
+		<div class="guitar">
+			<div class="guitar-first-row">
+				<div id="c" class="keyboard c-guitar"><span class="outline">7</span></div>
+				<div id="d" class="keyboard d-guitar"><span class="outline">8</span></div>
+				<div id="e" class="keyboard e-guitar"><span class="outline">9</span></div>
+			</div>
+			<div class="guitar-second-row">
+				<div id="f" class="keyboard f-guitar"><span class="outline">4</span></div>
+				<div id="g" class="keyboard g-guitar"><span class="outline">5</span></div>
+				<div id="a" class="keyboard a-guitar"><span class="outline">6</span></div>
+			</div>
+			<div class="guitar-third-row">
+				<div id="c-mute" class="keyboard c-guitar-mute"><span class="outline">1</span></div>
+				<div id="d-mute" class="keyboard d-guitar-mute"><span class="outline">2</span></div>
+				<div id="e-mute" class="keyboard e-guitar-mute"><span class="outline">3</span></div>
+			</div>
+			<div class="guitar-fourth-row">
+				<div id="f-mute" class="keyboard-wide f-guitar-mute"><span class="outline">0</span></div>
+			</div>
+			<div class="guitar-column">
+				<div id="g-mute" class="keyboard-high g-guitar-mute"><span class="outline">+</span></div>
+				<div id="a-mute" class="keyboard-high a-guitar-mute"><span class="outline">E</span></div>
+			</div>
+		</div>
+		<div id="audio-storage"></div>
+	</div>
+	<script src="js/keys.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>

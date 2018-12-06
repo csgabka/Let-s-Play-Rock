@@ -1,0 +1,90 @@
+.drums::before {
+	background-image: url(../img/drums.jpg);
+	background-position: center;
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -2;
+	opacity: 0.8;
+	border-radius: 25px;
+}
+
+.drums {
+	position: absolute;
+	height: 100%;
+	width: 40%;
+	z-index: 1;
+	border-right: 1px black solid;
+	border-left: 1px white solid;
+	border-radius: 25px;
+}
+
+
+.drums-bottom-row 
+{
+	position: absolute;
+	height:100%;
+ 	width: 100%;
+ 	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.drums-top-row
+ {
+ 	position: absolute;
+ 	height: 100%;
+	top: 10%;
+ 	width: 100%;
+ 	display: flex;
+  	flex-direction: row;
+  	justify-content: center;
+ }
+
+.snare, .first-tom, .second-tom, .bass-drum, .crash, .ride, 
+.hi-hat, .floor-tom {
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 99;
+}
+
+.snare {
+	background-image: url(../img/snare-drum.jpg);
+}
+
+.first-tom {
+	background-image: url(../img/tom-1.jpg);
+}
+
+.second-tom {
+	background-image: url(../img/tom-2.jpg);
+}
+
+.bass-drum {
+	background-image: url(../img/bass-drum.png);
+}
+
+.crash {
+	background-image: url(../img/crash.png);
+	background-position: center;
+}
+
+.ride {
+	background-image: url(../img/ride.png);
+	background-position: center;
+}
+
+.hi-hat {
+	background-image: url(../img/hi-hat.jpg);
+	background-position: center;
+}
+.floor-tom {
+	background-image: url(../img/floor-tom.jpg);
+}

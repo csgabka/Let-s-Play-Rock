@@ -1,0 +1,143 @@
+.guitar::before {
+	background-image: url(../img/guitar.jpg);
+	background-position: center;
+	content: "";
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -2;
+	opacity: 0.8;
+	border-radius: 25px;
+}
+
+.guitar {
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 40%;
+	z-index: 1;
+	border-right: 1px black solid;
+	border-left: 1px white solid;
+	border-radius: 25px;
+}
+
+ .guitar-first-row
+{
+	position: absolute;
+	height: 25%;
+ 	width: 75%;
+ 	display: flex;
+  	flex-direction: row;
+  	justify-content: center;
+  	align-items: center;
+  	
+}
+
+ .guitar-second-row
+{
+	top: 25%;
+	position: absolute;
+	height: 25%;
+ 	width: 75%;
+ 	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	
+}
+
+ .guitar-third-row
+{
+	position: absolute;
+	height: 25%;
+ 	width: 75%;
+ 	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	top: 50%;
+  	
+}
+
+.guitar-fourth-row
+{
+	position: absolute;
+	height: 25%;
+ 	width: 75%;
+ 	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	top: 75%;
+  	
+}
+
+.guitar-column {
+	position: absolute;
+	height: 100%;
+ 	width: 25%;
+ 	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+  	top: 0;
+  	right: 0;
+  	
+}
+
+
+.c-guitar, .d-guitar, .e-guitar, .f-guitar, .g-guitar, .a-guitar, 
+.c-guitar-mute, .d-guitar-mute, .e-guitar-mute, .f-guitar-mute, .g-guitar-mute, .a-guitar-mute {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.c-guitar {
+	background-image: url(../img/C-guitar.jpg);
+}
+
+.d-guitar {
+	background-image: url(../img/D-guitar.jpg);
+}
+
+.e-guitar {
+	background-image: url(../img/Em-guitar.jpg);
+}
+
+.f-guitar {
+	background-image: url(../img/F-guitar.jpg);
+}
+
+.g-guitar {
+	background-image: url(../img/G-guitar.jpg);
+}
+
+.a-guitar {
+	background-image: url(../img/A-guitar.jpg);
+}
+
+.c-guitar-mute {
+	background-image: url(../img/C-guitar-mute.jpg);
+}
+
+.d-guitar-mute {
+	background-image: url(../img/D-guitar-mute.jpg);
+}
+
+.e-guitar-mute {
+	background-image: url(../img/Em-guitar-mute.jpg);
+}
+
+.f-guitar-mute {
+	background-image: url(../img/F-guitar-mute.jpg);
+}
+
+.g-guitar-mute {
+	background-image: url(../img/G-guitar-mute.jpg);
+}
+
+.a-guitar-mute {
+	background-image: url(../img/A-guitar-mute.jpg);
+}
+	
