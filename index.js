@@ -1,5 +1,5 @@
 /*disable doubletap for ios*/
-var doubleTouchStartTimestamp = 0;
+let doubleTouchStartTimestamp = 0;
 document.addEventListener("touchstart", function(event){
     var now = +(new Date());
     if (doubleTouchStartTimestamp + 500 > now){
@@ -61,7 +61,7 @@ function removeFromDom() {
 }
 
 /*removes letter on hover*/
-function removeLetter(event) {
+function removeStyleOnHover(event) {
 	for (i=0; i<keys.length; i++) {
 		if (keys[i].name === event.target.id) {
 			hovered = event.target.id;
@@ -74,12 +74,11 @@ function removeLetter(event) {
 	}
 }
 
-function addLetter(event) {
+function addStyleOnHover(event) {
 	for (i=0; i<keys.length; i++) {
 		if (keys[i].name === event.target.id) {
 		document.getElementById(hovered).innerHTML = content;
 		document.getElementById(hovered).style = null;
+		}
 	}
 }
-}
-
