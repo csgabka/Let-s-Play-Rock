@@ -1,4 +1,12 @@
-/*disable doubletap for ios*/
+/*if touch device remove all onmouseenter and onmouseleave events*/
+if ("ontouchstart" in document.documentElement)
+{
+	document.removeEventListener("onmouseenter", false);
+	document.removeEventListener("onmouseleave", false);    
+}
+
+
+/*disable doubletap*/
 let doubleTouchStartTimestamp = 0;
 document.addEventListener("touchstart", function(event){
     let now = +(new Date());
@@ -8,7 +16,9 @@ document.addEventListener("touchstart", function(event){
     doubleTouchStartTimestamp = now;
 });
 
-let j = 0;
+
+
+j = 0;
 function playInstrument(event) {
 	for (i=0; i<keys.length; i++) {
 		if (keys[i].code === event.keyCode) {
