@@ -44,12 +44,6 @@ h1 {
     transition: 1s ease-in-out;
 }
 
-.keyboard:hover, .keyboard-wide:hover, .keyboard-high:hover {
-	cursor: pointer;
-	transform: scale(1.5);
-	transition: 500ms ease-in-out;
-}
-
 .keyboard-wide {
 	display: absolute;
 	margin: 0 5px;
@@ -86,12 +80,14 @@ h1 {
 	flex-direction: row;
 	}
 
-	.keyboard-wide {
-	width: 40%;
-	height: 50%;
+		.keyboard-wide {
+		width: 40%;
+		height: 50%;
+	}
+
+	.keyboard-high {
+		width: 60%;
+		height: 20%;
+	}
 }
 
-.keyboard-high {
-	width: 60%;
-	height: 20%;
-}

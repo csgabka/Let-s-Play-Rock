@@ -67,6 +67,9 @@ function removeLetter(event) {
 			hovered = event.target.id;
 			content = document.getElementById(hovered).innerHTML;
 			document.getElementById(hovered).innerHTML = null;
+			document.getElementById(hovered).style.cursor =  "pointer";
+			document.getElementById(hovered).style.transform = "scale(1.2)";
+			document.getElementById(hovered).style.transition = "500ms ease-in-out";
 		}
 	}
 }
@@ -75,6 +78,7 @@ function addLetter(event) {
 	for (i=0; i<keys.length; i++) {
 		if (keys[i].name === event.target.id) {
 		document.getElementById(hovered).innerHTML = content;
+		document.getElementById(hovered).style = null;
 	}
 }
 }
