@@ -1,6 +1,7 @@
 .guitar::before {
 	background-image: url(../img/guitar.jpg);
 	background-position: center;
+	background-size: cover;
 	content: "";
 	position: absolute;
 	right: 0;
@@ -13,9 +14,9 @@
 
 .guitar {
 	position: absolute;
-	right: 0;
-	height: 100%;
-	width: 40%;
+	right: 5%;
+	height: 70%;
+	width: 30%;
 	z-index: 1;
 	border-right: 1px black solid;
 	border-left: 1px white solid;
@@ -26,7 +27,7 @@
 {
 	position: absolute;
 	height: 25%;
- 	width: 75%;
+ 	width: 70%;
  	display: flex;
   	flex-direction: row;
   	justify-content: center;
@@ -39,7 +40,7 @@
 	top: 25%;
 	position: absolute;
 	height: 25%;
- 	width: 75%;
+ 	width: 70%;
  	display: flex;
   	flex-direction: row;
   	align-items: center;
@@ -51,7 +52,7 @@
 {
 	position: absolute;
 	height: 25%;
- 	width: 75%;
+ 	width: 70%;
  	display: flex;
   	flex-direction: row;
   	align-items: center;
@@ -64,23 +65,22 @@
 {
 	position: absolute;
 	height: 25%;
- 	width: 75%;
+ 	width: 70%;
  	display: flex;
   	flex-direction: row;
   	align-items: center;
   	justify-content: center;
   	top: 75%;
-  	
-}
+ }
 
 .guitar-column {
 	position: absolute;
 	height: 100%;
- 	width: 25%;
+ 	width: 30%;
  	display: flex;
   	flex-direction: column;
   	align-items: center;
-  	justify-content: center;
+  	justify-content: space-around;
   	top: 0;
   	right: 0;
   	
@@ -90,7 +90,9 @@
 .c-guitar, .d-guitar, .e-guitar, .f-guitar, .g-guitar, .a-guitar, 
 .c-guitar-mute, .d-guitar-mute, .e-guitar-mute, .f-guitar-mute, .g-guitar-mute, .a-guitar-mute {
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
+	background-position: center;
+
 }
 
 .c-guitar {

@@ -11,7 +11,6 @@ function playInstrument(event) {
 			source.setAttribute('type', 'audio/wav');
 			document.getElementById('audio-storage').appendChild(audio);
 			document.getElementById(id).appendChild(source);
-			document.getElementById(keys[i].name).style.border = "2px purple solid";
 			document.getElementById(keys[i].name).style.opacity = "0.6";
 			document.getElementById(id).play(removeFromDom());
 		}
@@ -49,5 +48,24 @@ function removeFromDom() {
 				   aud.parentNode.removeChild(aud);
 				   selected.style = null;
 			};
+}
+
+/*removes letter on hover*/
+function removeLetter(event) {
+	for (i=0; i<keys.length; i++) {
+		if (keys[i].name === event.target.id) {
+			hovered = event.target.id;
+			content = document.getElementById(hovered).innerHTML;
+			document.getElementById(hovered).innerHTML = null;
+		}
+	}
+}
+
+function addLetter(event) {
+	for (i=0; i<keys.length; i++) {
+		if (keys[i].name === event.target.id) {
+		document.getElementById(hovered).innerHTML = content;
+	}
+}
 }
 

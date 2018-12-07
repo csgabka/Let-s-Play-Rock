@@ -1,6 +1,7 @@
 .drums::before {
 	background-image: url(../img/drums.jpg);
 	background-position: center;
+	background-size: cover;
 	content: "";
 	position: absolute;
 	height: 100%;
@@ -14,8 +15,9 @@
 
 .drums {
 	position: absolute;
-	height: 100%;
-	width: 40%;
+	left: 5%;
+	height: 70%;
+	width: 30%;
 	z-index: 1;
 	border-right: 1px black solid;
 	border-left: 1px white solid;
@@ -26,7 +28,8 @@
 .drums-bottom-row 
 {
 	position: absolute;
-	height:100%;
+	height:40%;
+	top: 50%;
  	width: 100%;
  	display: flex;
   	flex-direction: row;
@@ -37,7 +40,7 @@
 .drums-top-row
  {
  	position: absolute;
- 	height: 100%;
+ 	height: 40%;
 	top: 10%;
  	width: 100%;
  	display: flex;
@@ -48,7 +51,8 @@
 .snare, .first-tom, .second-tom, .bass-drum, .crash, .ride, 
 .hi-hat, .floor-tom {
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
+	background-position: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
