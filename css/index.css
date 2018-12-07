@@ -88,3 +88,9 @@ h1 {
 	}
 }
 
+@media {
+	body {
+		cursor:pointer;
+	}
+}
+
