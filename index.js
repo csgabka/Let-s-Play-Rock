@@ -1,7 +1,7 @@
 /*disable doubletap for ios*/
 let doubleTouchStartTimestamp = 0;
 document.addEventListener("touchstart", function(event){
-    var now = +(new Date());
+    let now = +(new Date());
     if (doubleTouchStartTimestamp + 500 > now){
         event.preventDefault();
     };
@@ -25,11 +25,6 @@ function playInstrument(event) {
 			document.getElementById(id).play(removeFromDom());
 		}
 	}
-}
-
-function removeStyle() {
-		document.getElementById(keys[i].name).style.border = "12px purple solid";
-		document.getElementById(keys[i].name).style.opacity = null;
 }
 
 
@@ -68,8 +63,6 @@ function removeStyleOnHover(event) {
 			content = document.getElementById(hovered).innerHTML;
 			document.getElementById(hovered).innerHTML = null;
 			document.getElementById(hovered).style.cursor =  "pointer";
-			document.getElementById(hovered).style.transform = "scale(1.2)";
-			document.getElementById(hovered).style.transition = "500ms ease-in-out";
 		}
 	}
 }
