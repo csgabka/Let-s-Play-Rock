@@ -1,3 +1,13 @@
+/*disable doubletap for ios*/
+var doubleTouchStartTimestamp = 0;
+document.addEventListener("touchstart", function(event){
+    var now = +(new Date());
+    if (doubleTouchStartTimestamp + 500 > now){
+        event.preventDefault();
+    };
+    doubleTouchStartTimestamp = now;
+});
+
 let j = 0;
 function playInstrument(event) {
 	for (i=0; i<keys.length; i++) {
