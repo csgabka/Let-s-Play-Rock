@@ -1,7 +1,7 @@
 let doubleTouchStartTimestamp = 0;
 document.addEventListener("touchstart", function(event) {
     let now = +(new Date());
-    if (doubleTouchStartTimestamp + 500 > now){
+    if (doubleTouchStartTimestamp + 200 > now){
         event.preventDefault();
     };
     doubleTouchStartTimestamp = now;
@@ -54,7 +54,7 @@ function removeFromDom() {
 			};
 }
 
-/*removes letter on hover*/
+/*hover effect only on non-touch devices!*/
 function removeStyleOnHover(event) {
 	if (!("ontouchstart" in document.documentElement)) {
 		for (i=0; i<keys.length; i++) {
@@ -63,6 +63,7 @@ function removeStyleOnHover(event) {
 			content = document.getElementById(hovered).innerHTML;
 			document.getElementById(hovered).innerHTML = null;
 			document.getElementById(hovered).style.cursor =  "pointer";
+			document.getElementById(hovered).style.transform = "scale(1.5)";
 		}
 	}
 }
