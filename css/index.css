@@ -92,5 +92,9 @@ h1 {
 	body {
 		touch-action: manipulation;
 	}
-}
 
+	//to enable click on Ios
+	.keyboard, .keyboard-wide, .keyboard-high {
+		cursor : pointer;
+	}
+}
