@@ -2,7 +2,11 @@
 /*disable doubletap*/
 if ("ontouchstart" in document.documentElement)
 {
-	document.removeEventListener("onmouseenter", removeStyleOnHover);
+	let notice = document.createElement('h1');
+	notice.innerHTML("you are on a touchpad device");
+	notice.appendChild(body);
+
+	/*document.removeEventListener("onmouseenter", removeStyleOnHover);
 	document.removeEventListener("onmouseleave", addStyleOnHover);  
 	let doubleTouchStartTimestamp = 0;
 	document.addEventListener("touchstart", function(event){
@@ -11,9 +15,10 @@ if ("ontouchstart" in document.documentElement)
         event.preventDefault();
     };
     doubleTouchStartTimestamp = now;
-});
+});*/
 	  
 }
+
 
 j = 0;
 function playInstrument(event) {
