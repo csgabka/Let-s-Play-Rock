@@ -1,12 +1,4 @@
-/*let doubleTouchStartTimestamp = 0;
-document.addEventListener("touchstart", function(event) {
-    let now = +(new Date());
-    if (doubleTouchStartTimestamp + 300 > now){
-        event.preventDefault();
-    };
-    doubleTouchStartTimestamp = now;
-});*/
-
+/*plays on keyboard*/
 j = 0;
 function playInstrument(event) {
 	for (i=0; i<keys.length; i++) {
@@ -25,7 +17,6 @@ function playInstrument(event) {
 		}
 	}
 }
-
 
 function playOnClick(event) {
 	for (i=0; i<keys.length; i++) {
@@ -64,11 +55,10 @@ function removeStyleOnHover(event) {
 			document.getElementById(hovered).innerHTML = null;
 			document.getElementById(hovered).style.cursor =  "pointer";
 			document.getElementById(hovered).style.transform = "scale(1.5)";
+			}
 		}
 	}
 }
-}
-
 
 function addStyleOnHover(event) {
 	if (!("ontouchstart" in document.documentElement)) {
