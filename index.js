@@ -1,3 +1,9 @@
+
+function testMe(event) {
+	console.log('it works');
+	document.getElementById('test').innerHTML = "It works!";
+}
+
 /*plays on keyboard*/
 j = 0;
 function playInstrument(event) {
