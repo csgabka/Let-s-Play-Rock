@@ -1,4 +1,3 @@
-
 /*plays on keyboard*/
 j = 0;
 function playInstrument(event) {
@@ -20,9 +19,6 @@ function playInstrument(event) {
 }
 
 function playOnClick(event) {
-	document.getElementById('title').innerHTML = "Tap works!";
-/*
-
 	for (i=0; i<keys.length; i++) {
 		if (keys[i].name === event.target.id) {
 			let audio = document.createElement('audio');
@@ -36,7 +32,7 @@ function playOnClick(event) {
 			document.getElementById(id).appendChild(source);
 			document.getElementById(id).play(this.removeFromDom());		
 		}
-	}*/
+	}
 }
 
 /*remove from the dom once played*/
