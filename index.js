@@ -1,11 +1,11 @@
-/*let doubleTouchStartTimestamp = 0;
+let doubleTouchStartTimestamp = 0;
 document.addEventListener("touchstart", function(event) {
     let now = +(new Date());
-    if (doubleTouchStartTimestamp + 200 > now){
+    if (doubleTouchStartTimestamp + 300 > now){
         event.preventDefault();
     };
     doubleTouchStartTimestamp = now;
-});*/
+});
 
 j = 0;
 function playInstrument(event) {
