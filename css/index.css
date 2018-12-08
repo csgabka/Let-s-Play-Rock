@@ -88,9 +88,9 @@ h1 {
 	}
 }
 
-/*@media {
+@media {
 	body {
-		cursor:pointer;
+		touch-action: manipulation;
 	}
-}*/
+}
 
