@@ -60,10 +60,7 @@ function removeFromDom() {
 
 /*removes letter on hover*/
 function removeStyleOnHover(event) {
-	if ("ontouchstart" in document.documentElement) {
-		return null
-	}
-	else {
+	if (!("ontouchstart" in document.documentElement)) {
 		for (i=0; i<keys.length; i++) {
 		if (keys[i].name === event.target.id) {
 			hovered = event.target.id;
@@ -72,19 +69,17 @@ function removeStyleOnHover(event) {
 			document.getElementById(hovered).style.cursor =  "pointer";
 		}
 	}
-	}
+}
 }
 
+
 function addStyleOnHover(event) {
-	if ("ontouchstart" in document.documentElement) {
-		return null
-	}
-	else {
+	if (!("ontouchstart" in document.documentElement)) {
 		for (i=0; i<keys.length; i++) {
 		if (keys[i].name === event.target.id) {
-		document.getElementById(hovered).innerHTML = content;
-		document.getElementById(hovered).style = null;
+			document.getElementById(hovered).innerHTML = content;
+			document.getElementById(hovered).style = null;
+			}
 		}
-	}
 	}
 }
