@@ -1,22 +1,19 @@
 /*if touch device remove all onmouseenter and onmouseleave events*/
+/*disable doubletap*/
 if ("ontouchstart" in document.documentElement)
 {
-	document.removeEventListener("onmouseenter", false);
-	document.removeEventListener("onmouseleave", false);    
-}
-
-
-/*disable doubletap*/
-let doubleTouchStartTimestamp = 0;
-document.addEventListener("touchstart", function(event){
+	document.removeEventListener("onmouseenter", removeStyleOnHover);
+	document.removeEventListener("onmouseleave", addStyleOnHover);  
+	let doubleTouchStartTimestamp = 0;
+	document.addEventListener("touchstart", function(event){
     let now = +(new Date());
     if (doubleTouchStartTimestamp + 500 > now){
         event.preventDefault();
     };
     doubleTouchStartTimestamp = now;
 });
-
-
+	  
+}
 
 j = 0;
 function playInstrument(event) {
