@@ -2,9 +2,7 @@
 /*disable doubletap*/
 if ("ontouchstart" in document.documentElement)
 {
-	let notice = document.createElement('h1');
-	notice.innerHTML("you are on a touchpad device");
-	notice.appendChild(body);
+	
 
 	/*document.removeEventListener("onmouseenter", removeStyleOnHover);
 	document.removeEventListener("onmouseleave", addStyleOnHover);  
