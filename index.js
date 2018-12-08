@@ -1,9 +1,5 @@
 /*if touch device remove all onmouseenter and onmouseleave events*/
 /*disable doubletap*/
-if ("ontouchstart" in document.documentElement)
-{
-	
-
 	/*document.removeEventListener("onmouseenter", removeStyleOnHover);
 	document.removeEventListener("onmouseleave", addStyleOnHover);  
 	let doubleTouchStartTimestamp = 0;
@@ -14,9 +10,6 @@ if ("ontouchstart" in document.documentElement)
     };
     doubleTouchStartTimestamp = now;
 });*/
-	  
-}
-
 
 j = 0;
 function playInstrument(event) {
@@ -67,7 +60,11 @@ function removeFromDom() {
 
 /*removes letter on hover*/
 function removeStyleOnHover(event) {
-	for (i=0; i<keys.length; i++) {
+	if ("ontouchstart" in document.documentElement) {
+		return null
+	}
+	else {
+		for (i=0; i<keys.length; i++) {
 		if (keys[i].name === event.target.id) {
 			hovered = event.target.id;
 			content = document.getElementById(hovered).innerHTML;
@@ -75,13 +72,19 @@ function removeStyleOnHover(event) {
 			document.getElementById(hovered).style.cursor =  "pointer";
 		}
 	}
+	}
 }
 
 function addStyleOnHover(event) {
-	for (i=0; i<keys.length; i++) {
+	if ("ontouchstart" in document.documentElement) {
+		return null
+	}
+	else {
+		for (i=0; i<keys.length; i++) {
 		if (keys[i].name === event.target.id) {
 		document.getElementById(hovered).innerHTML = content;
 		document.getElementById(hovered).style = null;
 		}
+	}
 	}
 }
