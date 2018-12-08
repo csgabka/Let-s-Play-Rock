@@ -19,7 +19,6 @@ html, body {
 }
 
 h1 {
-	z-index: !important 99;
 	position: fixed;
 	top: 0;
 }
