@@ -48,7 +48,7 @@ function removeFromDom() {
 }
 
 /*hover effect only on non-touch devices!*/
-function removeStyleOnHover(event) {
+/*function removeStyleOnHover(event) {
 	if (!("ontouchstart" in document.documentElement)) {
 		for (i=0; i<keys.length; i++) {
 		if (keys[i].name === event.target.id) {
@@ -71,4 +71,4 @@ function addStyleOnHover(event) {
 			}
 		}
 	}
-}
+}*/
