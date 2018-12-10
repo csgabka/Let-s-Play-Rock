@@ -19,8 +19,6 @@ function playInstrument(event) {
 }
 
 function playOnClick(event) {
-	document.getElementById('title').innerHTML = "tap works";
-	/*
 	for (i=0; i<keys.length; i++) {
 		if (keys[i].name === event.target.id) {
 			let audio = document.createElement('audio');
@@ -34,8 +32,9 @@ function playOnClick(event) {
 			document.getElementById(id).appendChild(source);
 			document.getElementById(id).play(this.removeFromDom());		
 		}
-	}*/
+	}
 }
+
 
 /*remove from the dom once played*/
 function removeFromDom() {	
@@ -48,7 +47,7 @@ function removeFromDom() {
 }
 
 /*hover effect only on non-touch devices!*/
-/*function removeStyleOnHover(event) {
+function removeStyleOnHover(event) {
 	if (!("ontouchstart" in document.documentElement)) {
 		for (i=0; i<keys.length; i++) {
 		if (keys[i].name === event.target.id) {
@@ -71,4 +70,4 @@ function addStyleOnHover(event) {
 			}
 		}
 	}
-}*/
+}
